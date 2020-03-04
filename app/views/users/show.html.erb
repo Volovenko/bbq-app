@@ -16,7 +16,7 @@
           <%= render partial: 'events/event', collection: @user.events %>
         </div>
       <% else %>
-        <p class="buffer-top">t('.text')</p>
+        <p class="buffer-top"> <%= t('.text') %></p>
       <% end %>
     </div>
   </div>

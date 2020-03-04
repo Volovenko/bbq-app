@@ -18,7 +18,9 @@
           <% if current_user_can_edit?(@event) %>
             <div class="buffer-both">
               <%= link_to t('.edit'), edit_event_path(@event),
-                class: 'btn btn-outline-success' %>
+                class: 'btn btn-success' %>
+               <%= link_to t('.destroy'), event_path(@event), method: :delete, data: {confirm: t('.confirm')}, 
+                 class: "btn btn-danger" %>
             </div>
           <% end %>
         </div>
