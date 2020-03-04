@@ -13,6 +13,8 @@ gem 'puma', '~> 4.1'
 gem 'sass-rails', '>= 6'
 
 gem 'devise'
+gem 'devise-i18n'
+gem 'rails-i18n'
 
 gem 'webpacker', '~> 4.0'
 

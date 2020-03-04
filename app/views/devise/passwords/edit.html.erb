@@ -1,12 +1,12 @@
 <div class="col-md-6 buffer-top">
-  <h2>Сменить пароль</h2>
+  <h2><%= t('.header') %></h2>
 
   <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :put }) do |f| %>
     <%= render "devise/shared/error_messages", resource: resource %>
     <%= f.hidden_field :reset_password_token %>
 
     <div class="form-group">
-      <%= f.label "Пароль" %> <i>(Оставьте пустым, если не хотите менять)</i><br />
+      <%= f.label :password %> <i>(Оставьте пустым, если не хотите менять)</i><br />
       <%= f.password_field :password, autocomplete: "new-password", class: 'form-control' %>
       <% if @minimum_password_length %>
         <em>не менее <%= @minimum_password_length %> символов</em>
@@ -14,12 +14,12 @@
     </div>
 
     <div class="form-group">
-      <%= f.label "Подтвердите пароль" %><br />
+      <%= f.label :password_confirmation %><br />
       <%= f.password_field :password_confirmation, autocomplete: "new-password", class: 'form-control' %>
     </div>с
 
     <div class="actions">
-      <%= f.submit "Сменить" %>
+      <%= f.submit t('.update') %>
     </div>
   <% end %>
 

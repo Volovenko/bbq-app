@@ -1,5 +1,5 @@
 <div class="col-md-6 buffer-top">
-  <h2>Войдите:</h2>
+  <h2><%= t('.header') %></h2>
 
   <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
 
@@ -21,7 +21,7 @@
     <% end %>
 
     <div class="actions">
-      <%= f.submit "Войти", class: "btn btn-primary" %>
+      <%= f.submit t ('.sign_in'), class: "btn btn-success" %>
     </div>
   <% end %>
   <div class="buffer-top">
