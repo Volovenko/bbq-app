@@ -52,6 +52,8 @@ ru:
       header: 'Новое событие'
     show:
       edit: 'Изменить'
+      destroy: 'Удалить'
+      confirm: 'Вы уверены?'
 
   errors:
     one: 'У Вас %{count} ошибка в форме'
