@@ -15,6 +15,12 @@ ru:
         address: 'Место проведения'
         datetime: 'Дата и время'
         description: 'Описание'
+      comment:
+        body: 'Комментарий:'
+        user_name: 'Ваше имя'
+      subscription:
+        user_name: 'Ваше имя'
+        user_email: 'Ваш Email'
 
   controllers:
     events:
@@ -75,6 +81,8 @@ ru:
     one: 'У Вас %{count} ошибка в форме'
     few: 'У Вас %{count} ошибки в форме'
     many: 'У Вас %{count} ошибок в форме'
+    check_user_email: 'Такой email уже есть в системе'
+    possibility_user_subscribe: 'Вы не можете подписаться на свое мероприятие'
 
   devise:
     passwords:
